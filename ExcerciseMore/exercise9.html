@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+</head>
+<body>
+a<input id="a" type="text">
+b<input id="b" type="text">
+<button onclick="hienThi()">hienthi</button>
+<h1 id="result"></h1>
+</body>
+<script>
+    //Bài 9: Nhập vào a, b. Tính Tổng các số chia 5 dư 2 từ a đến b.
+    function hienThi() {
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        let sum = 0;
+        for (let i = a; i <= b; i++) {
+            if (i % 5 === 2) {
+                console.log(i)
+                sum += i;
+            }
+        }
+        console.log(sum);
+
+    }
+
+    //Bài 4: Nhập vào a, b. In ra các số từ a đến b;
+</script>
+</html>
